@@ -13,7 +13,7 @@ defmodule BWT do
   end
 
   def last_column(rs) do
-    Enum.join(Enum.map(rs, fn (r) ->
+    join(map(rs, fn (r) ->
       String.slice(r, -1..-1)
     end))
   end
